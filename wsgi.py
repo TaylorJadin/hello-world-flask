@@ -1,6 +1,6 @@
 import sys
-
-sys.path.insert(0,'/var/www/webroot/ROOT')
-
+path = '/var/www/webroot/ROOT'
+if path not in sys.path:
+    sys.path.append(path)
 from hello import app
 application = app
