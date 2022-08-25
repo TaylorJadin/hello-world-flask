@@ -1,2 +1,2 @@
-from hello import app
+from hello.py import app
 application = app
