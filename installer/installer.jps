@@ -14,13 +14,12 @@ nodes:
 
 onInstall:
    - cmd[cp]: |-
-      cd ${globals.webroot} && rm -rf ROOT
+      cd ${globals.webroot} && rm -rf *
       git clone https://github.com/TaylorJadin/hello-world-flask ${globals.webroot}
-      rm .git
+      rm -rf .git
       rm -rf ./installer
       rm README.md
-      pip install requirements.txt
-      jem service restart
+      pip install -r requirements.txt
 
 success: |
   Your Flask environment is ready!
