@@ -1,0 +1,28 @@
+type: install
+version: 1.0
+id: hello-world-flask
+logo: https://raw.githubusercontent.com/TaylorJadin/hello-world-flask/main/installer/flask-logo.png
+homepage: https://palletsprojects.com/p/flask/
+name: Flask
+
+globals:
+  webroot: /var/www/webroot/ROOT
+
+nodes:
+  nodeType: apache-python
+  cloudlets: 8
+
+onInstall:
+   - cmd[cp]: |-
+      cd ${globals.webroot} && rm -rf ROOT
+      git clone https://github.com/TaylorJadin/hello-world-flask ${globals.webroot}
+      rm .git
+      rm -rf ./installer
+      rm README.md
+      pip install requirements.txt
+      jem service restart
+
+success: |
+  Your Flask environment is ready!
+  URL: [${env.protocol}://${env.domain}/](${env.protocol}://${env.domain}/)  
+  For more information check out the [repository](https://github.com/TaylorJadin/hello-world-flask)
