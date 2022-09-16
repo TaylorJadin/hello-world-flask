@@ -1,7 +1,7 @@
 # Hello World!
 ## Flask on Reclaim Cloud
 
-[Reclaim Cloud](https://reclaim.cloud) offers Python hosting via Apache's `mod_wsgi`. The document rootis `/var/www/webroot/ROOT` and this starter kit should get you started with the following three files:
+[Reclaim Cloud](https://reclaim.cloud) offers Python hosting via Apache's `mod_wsgi`. The document root is `/var/www/webroot/ROOT` and this starter kit should get you started with the following three files:
 
 #### `wsgi.py`
 Tells `mod_wsgi` where to find the application, in this the `hello.py` file. This is based on the default `wsgi.py` that comes when you deploy a Python environment on Reclaim Cloud and [Flask's mod_wsgi documentation](https://flask.palletsprojects.com/en/2.2.x/deploying/mod_wsgi/).
