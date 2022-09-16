@@ -1,7 +1,7 @@
 type: install
 version: 1.0
 id: hello-world-flask
-logo: https://raw.githubusercontent.com/TaylorJadin/hello-world-flask/main/installer/flask-logo.png
+logo: https://raw.githubusercontent.com/TaylorJadin/hello-world-flask/main/installer/flask.png
 homepage: https://palletsprojects.com/p/flask/
 name: Flask
 
