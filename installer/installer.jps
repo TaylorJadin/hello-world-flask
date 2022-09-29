@@ -34,4 +34,4 @@ onInstall:
 success: |
   Your Flask environment is ready!
   URL: [${env.protocol}://${env.domain}/](${env.protocol}://${env.domain}/)  
-  For more information check out the [repository](https://github.com/TaylorJadin/hello-world-flask)
+  For more information: [https://support.reclaimhosting.com/hc/en-us/articles/9220813439127](https://support.reclaimhosting.com/hc/en-us/articles/9220813439127)
